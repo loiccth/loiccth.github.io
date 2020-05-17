@@ -1,0 +1,354 @@
+/* ---Global--- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: "Lato", sans-serif;
+}
+
+*,
+ ::after,
+ ::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Lato", sans-serif;
+}
+
+body {
+	width: 100%
+}
+
+.flex-wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.main-content {
+	width: 100%;
+	max-width: 684px;
+	margin: auto;
+}
+
+
+/* ---main--- */
+
+.main-text {
+	font-size: 36px;
+	font-weight: 200;
+	max-width: 684px;
+	width: 100%;
+	text-align: center;
+}
+
+#github {
+	text-align: left;
+	width: 55%;
+	margin: auto;
+	margin-top: 10%;
+}
+
+#github h3 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 5%;
+}
+
+#github h3 i:hover {
+	color: #505050;
+}
+
+#github a {
+	text-decoration: none;
+	color: #333
+}
+
+#github a:hover {
+	color: #505050;
+}
+
+.github-info {
+	margin-bottom: 3%;
+}
+
+#current {
+	padding-top: 20px;
+}
+
+
+/* ---contact--- */
+
+.contact {
+	padding: 0 10px;
+}
+
+.contact-text {
+	font-size: 36px;
+	font-weight: 200;
+	max-width: 684px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 25px
+}
+
+.contact-form {
+	margin: 10px 0;
+}
+
+.contact-info {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	z-index: -1;
+}
+
+.form-control {
+	border: 1px solid #dae0e5;
+	border-radius: 0.25rem;
+	width: 100%;
+	line-height: 2em;
+	padding: 0 10px;
+}
+
+.form-control:required {
+	box-shadow: none;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn {
+	background: #fff
+}
+
+.btn:hover {
+	background: #dae0e5;
+}
+
+
+/* ---footer--- */
+
+.socials {
+	margin: 1% 5% 0;
+	text-align: center;
+}
+
+.socials ul li {
+	display: inline-block;
+}
+
+.socials ul li a {
+	text-decoration: none;
+	margin: 0 2vw;
+	font-size: 36px;
+	color: #333
+}
+
+.socials ul li a:hover {
+	color: #505050;
+}
+
+.copyright {
+	text-align: center;
+	margin: 1vh 0 1vh 0;
+}
+
+.copyright h5 {
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #000;
+}
+
+
+/* ---icons--- */
+
+.fas,
+.fab,
+.far {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1
+}
+
+.fa-envelope:before {
+	content: "\f0e0"
+}
+
+.fa-github:before {
+	content: "\f09b"
+}
+
+.fa-heart:before {
+	content: "\f004"
+}
+
+.fa-linkedin-in:before {
+	content: "\f0e1"
+}
+
+.fa-twitter:before {
+	content: "\f099"
+}
+
+.fa-file-pdf:before {
+	content: "\f1c1"
+}
+
+.fa-instagram:before {
+	content: "\f16d"
+}
+
+.fa-envelope:before {
+	content: "\f0e0"
+}
+
+.far {
+	font-weight: 400;
+	font-family: "Font Awesome 5 Free"
+}
+
+.fab {
+	font-family: "Font Awesome 5 Brands"
+}
+
+.fa,
+.fas {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900; 
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Brands";
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url(../webfonts/fa-brands-400.eot);
+	src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.woff) format("woff"), url(../webfonts/fa-brands-400.ttf) format("truetype"), url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url(../webfonts/fa-regular-400.eot);
+	src: url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-regular-400.woff2) format("woff2"), url(../webfonts/fa-regular-400.woff) format("woff"), url(../webfonts/fa-regular-400.ttf) format("truetype"), url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+	font-family: 'Font Awesome 5 Free';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url(../webfonts/fa-solid-900.eot);
+	src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+
+
+/* latin-ext */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* latin-ext */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* latin-ext */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* ---responsive--- */
+
+
+/* @media (min-width: 768px) and (max-width: 979px){.info{padding: 25vh 10vh 0 10vh;}.info p{padding-right: 40%;}}*/
+
+@media (max-width: 767px) {
+	.socials ul li a{
+		font-size: 30px;
+		margin: 0 5vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.main-text {
+		font-size: 26px;
+	}
+	#github {
+		width: 90%
+	}
+	.socials ul li a {
+		font-size: 24px;
+		margin: 0 5vw;
+	}
+}
+
