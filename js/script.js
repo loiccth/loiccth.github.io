@@ -1,20 +1,3 @@
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myObj = JSON.parse(this.responseText);
-        document.getElementById("name").innerHTML = myObj.name;
-        document.getElementById("url").href = myObj.url;
-        document.getElementById("message").innerHTML = myObj.message;
-        document.getElementById("date").innerHTML = myObj.date;
-        document.getElementById("public").innerHTML = myObj.public;
-        document.getElementById("now").innerHTML = myObj.now;
-    }
-};
-xmlhttp.open("GET", "data.json", true);
-xmlhttp.send();
-
-
-
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
